@@ -1,0 +1,217 @@
+.nav-content {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 2em;
+  right: 0;
+  margin-right: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.form-switch {
+  display: flex;
+  justify-content: end;
+}
+
+.form-switch .form-check-input {
+  margin-right: 8px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.form-check-label {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.navPages {
+  display: flex;
+  justify-content: end;
+  margin-top: 12px;
+}
+
+.navPages > * {
+  padding: 0 16px;
+  font-size: 18px;
+  border-right-color: var(--line-color);
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.write {
+  display: flex;
+}
+
+.write p {
+  margin-left: 6px;
+}
+
+.write svg {
+  fill: var(--text-color);
+}
+
+.search {
+  display: none;
+  border-right-style: none;
+  padding-right: 0px;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.navbar {
+  display: none;
+}
+
+.routers {
+  width: 70vw;
+  box-shadow: inset 0 -1px 0 var(--routers-div);
+  margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .carousel.show {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    bottom: 4.7em;
+    right: 0em;
+  }
+
+  .navbar.show {
+    display: block;
+    position: absolute;
+    bottom: 5.1em;
+    right: 0em;
+  }
+
+  .navbar-toggler {
+    border-color: var(--text-color);
+  }
+
+  .dark .navbar-toggler {
+    background-color: var(--text-color);
+  }
+
+  .nav-content {
+    position: unset;
+    display: none;
+    margin-right: 0;
+  }
+
+  .nav-content.show {
+    position: relative;
+    top: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navPages > * {
+    padding: 0 12px;
+  }
+
+  .navPages a,
+  .navPages div {
+    border: unset;
+  }
+
+  .search {
+    display: block;
+    padding-right: 0px;
+  }
+
+  .search svg {
+    fill: var(--text-color);
+  }
+
+  .navbar-toggler {
+    display: block;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .routers {
+    display: flex;
+  }
+
+  .routers p {
+    display: flex;
+    margin-right: 16px;
+  }
+
+  .routers .active {
+    color: var(--current-nav-color);
+    border-bottom: 1px solid var(--current-nav-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .navPages a:hover {
+    background-size: 100%;
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+    border-right-style: none;
+    border-radius: 4px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .write:hover p {
+    background-size: 100%;
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+    border-right-style: none;
+    border-radius: 4px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .write:hover svg {
+    background-size: 100%;
+    background-color: var(--hover-bg);
+    fill: var(--hover-text);
+    border-right-style: none;
+    border-radius: 4px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .routers {
+    margin-bottom: 24px;
+  }
+
+  .routers p:not(:first-child) {
+    display: none;
+  }
+
+  .routers a {
+    margin-right: 16px;
+    width: fit-content;
+    display: flex;
+    color: var(--current-nav-color);
+    border-bottom: 1px solid var(--current-nav-color);
+  }
+
+  .routers a:hover {
+    color: var(--current-nav-color);
+  }
+
+  .write {
+    border-right-style: none;
+    padding-right: 0px;
+  }
+}
