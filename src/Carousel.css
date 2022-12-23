@@ -1,0 +1,51 @@
+.carousel {
+  display: flex;
+  background-color: var(--carousel-bg);
+  height: 2.2em;
+  border-radius: 40px;
+  width: 9em;
+  padding: 8px;
+  overflow: hidden;
+  margin-top: 16px;
+  z-index: 1;
+}
+
+.carousel-content {
+  animation: carousel 8s ease infinite;
+}
+
+.carousel-content * {
+  height: 40px;
+  flex-shrink: 0;
+  display: block;
+  text-align: center;
+  color: var(--carousel-text);
+}
+
+.carousel-content a:hover {
+  color: var(--carousel-text);
+}
+
+@keyframes carousel {
+  0% {
+      transform:translateY(0);
+  }
+  33% {
+      transform:translateY(0);
+  }
+  41% {
+      transform:translateY(-33.33%);
+  }
+  66% {
+      transform: translateY(-33.33%);
+  }
+  74% {
+      transform: translateY(-66.66%);
+  }
+  99.99% {
+      transform: translateY(-66.66%);
+  }
+  to {
+      transform: translateY(0%);
+  }
+}
