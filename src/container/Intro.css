@@ -1,0 +1,58 @@
+/* all direct children ; .profile * will select all children, include indirect */
+.profile > * {
+  margin-bottom: 12px;
+}
+
+.profile-img {
+  width: 9em;
+  border-radius: 50%;
+}
+
+.follow button {
+  background-color: var(--carousel-bg);
+  color: var(--carousel-text);
+}
+
+#about {
+  margin-top: 16px;
+}
+
+#about h2 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .profile {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 20%;
+    margin-right: 20px;
+  }
+
+  #about,
+  .follow {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    position: absolute;
+    right: 0px;
+    margin-right: 12px;
+  }
+}
