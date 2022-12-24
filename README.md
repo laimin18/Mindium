@@ -13,6 +13,10 @@ Please ensure you've installed node already.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Setting server
+
+1. If you want to access full functionality, you still have to `cd server` -> `node app.js` to start the back-end server
+
 ## Project Intro
 
 This is a project for writing and deleting articles.  
